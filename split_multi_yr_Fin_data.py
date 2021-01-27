@@ -2,7 +2,6 @@
 import pandas as pd
 import numpy as np
 import os
-import subprocess
 import datetime
 
 #read csv into  a dataframe
@@ -33,8 +32,6 @@ def split_input_files_by_quater(input_dir_name,input_file_prefix,output_dir_name
     else:
         return -1
 
-def copy_file_to_s3(source: str, target: str, bucket: str):
-   subprocess.run(["aws", "s3" , "cp", source, f"s3://{bucket}/{target}"])
 
 if __name__=='__main__':
     input_dir_name = 'C:\\Users\\User\\Downloads'
