@@ -1,20 +1,20 @@
-The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators. The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created over an AWS EMR cluster. After the Exploratory Data Analysis on a subset of the files, the files were loaded 
+The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators. The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created over an AWS EMR cluster. After the Exploratory Data Analysis on a subset of the files, the files were loaded using a pyspark job
 
 
-## Pull Through Rate
+#### Pull Through Rate
 This KPI measures pipeline efficiency by dividing total funded loans by the number of applications submitted during a defined period. This metric provides important insights into workflow efficiency, the quality of applications submitted, level of customer service, interest rate competitiveness and the suitability of a potential customer’s profile.
-## Application Approval Rate-Yes
+#### Application Approval Rate-Yes
 This metric is calculated by dividing the amount of approved applications by the amount of submitted applications.
 A low application approval rate means that a lender is investing too much time and money on unqualified borrower applications. Loan pipelines with a substandard application approval rate can be expedited by streamlining the document gathering and review processes.
-## Net Charge-Off Rate
+#### Net Charge-Off Rate
 The net charge-off rate is the the difference between gross charge-offs and any subsequent recoveries of delinquent debt. This KPI effectively represents that amount of debt a lender believes it will never collect compared to average receivables. Debt that is unlikely to be recovered is often written off and classified as gross charge-offs. To calculate the net charge-off value, any money that is eventually recovered on a debt is subsequently subtracted from the gross charge-offs.
-## Customer Acquisition Cost
+#### Customer Acquisition Cost
 This key financial measurement is the ratio of a borrower’s lifetime value to a borrower’s acquisition cost. These costs include but aren’t limited to research, marketing and advertising. Ideally, the customer acquisition cost should be greater than one since a borrower isn’t profitable if the cost to acquire is greater than the profit they will bring to a lender. This KPI is used by lenders to help determine how much of its resources can be profitably spent on a particular customer
-## Average Number of Conditions Per Loan
+#### Average Number of Conditions Per Loan
 This KPI is especially relevant for lenders seeking to enhance their CX. According to the International Monetary Fund (IMF), the average number of conditions per loan is 26.8. And this study by the IMF also found that the number of conditions on loan applications is increasing. The loan application process is hindered by a proliferation of conditions, adversely affecting a lender’s ability to provide a fast and seamless customer experience.
 
 
-## DataSet used :
+#### DataSet used :
 The dataset used in the project was downloaded from kaggle :
 https://www.kaggle.com/wordsforthewise/lending-club
 ### File Formats
