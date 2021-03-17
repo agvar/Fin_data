@@ -1,6 +1,5 @@
-# Peer to Peer Data Analysis
+The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators. The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created over an AWS EMR cluster. After the Exploratory Data Analysis on a subset of the files, the files were loaded 
 
-The project is analysing financial data for Peer to Peer company in order to calculate the following KPIs-
 
 ## Pull Through Rate
 This KPI measures pipeline efficiency by dividing total funded loans by the number of applications submitted during a defined period. This metric provides important insights into workflow efficiency, the quality of applications submitted, level of customer service, interest rate competitiveness and the suitability of a potential customer’s profile.
