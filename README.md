@@ -30,7 +30,7 @@ The 2 Kaggle files which were large datasets with data from 2007 to 2018, were s
 ###### Ensure all calculation fields are float or numeral by removing spaces , removing symbols- '%','years' etc and converting
 ###### Validate data (eg- states vs zipcode data)- fix incorrect data
 ###### Check for duplicates: Use this as an opportunity to check for duplicates (based on name, email address, phone number, etc.), and do so at the start of the process. This will reduce both the amount of data you have to scrub as well as making data validation (at the end of the process) much simpler. 
-######Standardize Formats: Review the formats being used for applicable data types (dates, phone numbers, postal codes etc) and set and apply a standard format to all. 
+###### Standardize Formats: Review the formats being used for applicable data types (dates, phone numbers, postal codes etc) and set and apply a standard format to all. 
 ###### Special Characters & Accents: Depending on the file format and encoding chosen, special characters can display weirdly once the data is exported. For example, the term “Açaí” might display as “AÃ§aÃ,”­ so make sure to do a check and clean as needed
 ###### Add fields that are a combination of multiple fields for easier analysis(like flags)
 ###### Remove leading and trailing spaces for all string fields
