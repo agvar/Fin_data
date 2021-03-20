@@ -34,6 +34,3 @@ The 2 Kaggle files which were large datasets with data from 2007 to 2018, were s
 ###### Special Characters & Accents: Depending on the file format and encoding chosen, special characters can display weirdly once the data is exported. For example, the term “Açaí” might display as “AÃ§aÃ,”­ so make sure to do a check and clean as needed
 ###### Add fields that are a combination of multiple fields for easier analysis(like flags)
 ###### Remove leading and trailing spaces for all string fields
-###### Use assert statements- asset <condition>-> returns error if false or nothing if true
- 
-
