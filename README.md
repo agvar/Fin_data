@@ -5,6 +5,9 @@ The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created 
 The Kaggle dataset that was the source of data had 2 large files from 2007 to 2018, one for accepted amd the other for rejected loans. These datasets were split into separate files for each quater. The python script is used to split the files.
 Once the files are split, the files are loaded into an S3 bucket, from where the pyspark job processes them. The pyspark job cleanses the data and loads into a hive table
 
+##### Purpose:
+Check P2P KPIs in order to decide if this is an organization I want to invest in
+Predict if a user would be granted a loan, if he would be predict his interest rate(based on his liabilities and credit ratings)
 
 ##### Pull Through Rate
 This KPI measures pipeline efficiency by dividing total funded loans by the number of applications submitted during a defined period. This metric provides important insights into workflow efficiency, the quality of applications submitted, level of customer service, interest rate competitiveness and the suitability of a potential customer’s profile.
