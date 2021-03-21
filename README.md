@@ -1,4 +1,7 @@
-The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators. The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created over an AWS EMR cluster. After the Exploratory Data Analysis on a subset of the files, the files were loaded using a pyspark job
+The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators that Peer to Peer lending organizations use.The KPIs used are from the following link-
+https://www.lightico.com/blog/lending-kpis-most-important/
+
+The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created over an AWS EMR cluster. After the Exploratory Data Analysis on a subset of the files, the files were loaded using a pyspark job
 
 
 ##### Pull Through Rate
