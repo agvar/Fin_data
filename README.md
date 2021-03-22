@@ -7,7 +7,7 @@ Once the files are split, the files are loaded into an S3 bucket, from where the
 
 ##### Purpose:
 ###### Implement SCD type 2 on the quaterly file loads, by creating dimension and fact tables
-###### Implement workflows that process quaterly files and sends alerts if the load fails
+###### Use Apache Airflow(Amazon Managed Workflows for Apache Airflow) to process quaterly files and sends alerts if the load fails
 ###### Check P2P KPIs in order to decide if this is an organization I want to invest in
 ###### Predict if a user would be granted a loan, if he would be predict his interest rate(based on his liabilities and credit ratings)
 
