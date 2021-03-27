@@ -5,7 +5,7 @@ The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created 
 The Kaggle dataset that was the source of data had 2 large files from 2007 to 2018, one for accepted amd the other for rejected loans. These datasets were split into separate files for each quater. The python script is used to split the files.
 Once the files are split, the files are loaded into an S3 bucket, from where the pyspark job processes them. The pyspark job cleanses the data and loads into a hive table
 
-##### Purpose:
+##### Motivation:
 ###### Create a pyspark job that cleanses data- replaces Null and NaN with zeros, standardizes addresses
 ###### Implement SCD type 2 on the quaterly file loads, by creating dimension and fact tables in Hive
 ###### Use Apache Airflow(Amazon Managed Workflows for Apache Airflow) to process quaterly files and sends alerts if the load fails
