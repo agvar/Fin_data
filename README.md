@@ -1,4 +1,4 @@
-# Peer to Peer Loan Data
+# Peer to Peer Loan Data Analysis
 The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators that Peer to Peer lending organizations use.The KPIs used are from the following link-
 https://www.lightico.com/blog/lending-kpis-most-important/
 
