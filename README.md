@@ -30,10 +30,8 @@ This KPI is especially relevant for lenders seeking to enhance their CX. Accordi
 The dataset used in the project was downloaded from kaggle :
 https://www.kaggle.com/wordsforthewise/lending-club
 #### File Formats
-##### rejected_2007_to_2018Q4.csv.gz
-(Rejected loans from 2007 to 2018 -dataset for all accepted loans from 2007 to 2018 Q4 )
-##### accepted_2007_to_2018Q4.csv.gz
-(Accepted loans from 2007 to 2018 -dataset for all accepted loans from 2007 to 2018 Q4 )
+1) rejected_2007_to_2018Q4.csv.gz(Rejected loans from 2007 to 2018 -dataset for all accepted loans from 2007 to 2018 Q4 )
+2) accepted_2007_to_2018Q4.csv.gz(Accepted loans from 2007 to 2018 -dataset for all accepted loans from 2007 to 2018 Q4 )
 The 2 Kaggle files which were large datasets with data from 2007 to 2018, were split into separate files by quater.
 
 # Data cleansing steps: 
