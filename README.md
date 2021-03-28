@@ -1,3 +1,4 @@
+# Peer to Peer Loan Data
 The project uses a Kaggle dataset in order to calculate a few Key perfomance Indicators that Peer to Peer lending organizations use.The KPIs used are from the following link-
 https://www.lightico.com/blog/lending-kpis-most-important/
 
@@ -5,12 +6,12 @@ The dataset was loaded into an AWS S3 bucket and a pyspark notebook was created 
 The Kaggle dataset that was the source of data had 2 large files from 2007 to 2018, one for accepted amd the other for rejected loans. These datasets were split into separate files for each quater. The python script is used to split the files.
 Once the files are split, the files are loaded into an S3 bucket, from where the pyspark job processes them. The pyspark job cleanses the data and loads into a hive table
 
-##### Motivation:
-###### Create a pyspark job that cleanses data- replaces Null and NaN with zeros, standardizes addresses
-###### Implement SCD type 2 on the quaterly file loads, by creating dimension and fact tables in Hive
-###### Use Apache Airflow(Amazon Managed Workflows for Apache Airflow) to process quaterly files and sends alerts if the load fails
-###### Check P2P KPIs in order to decide if this is an organization I want to invest in
-###### Predict if a user would be granted a loan, if he would be predict his interest rate(based on his liabilities and credit ratings)
+# Motivation:
+1) Measures a pyspark job that cleanses data- replaces Null and NaN with zeros, standardizes addresses
+2) Implement SCD type 2 on the quaterly file loads, by creating dimension and fact tables in Hive
+3) Use Apache Airflow(Amazon Managed Workflows for Apache Airflow) to process quaterly files and sends alerts if the load fails
+4) Check P2P KPIs in order to decide if this is an organization I want to invest in
+5) Predict if a user would be granted a loan, if he would be predict his interest rate(based on his liabilities and credit ratings)
 
 ##### Pull Through Rate
 This KPI measures pipeline efficiency by dividing total funded loans by the number of applications submitted during a defined period. This metric provides important insights into workflow efficiency, the quality of applications submitted, level of customer service, interest rate competitiveness and the suitability of a potential customer’s profile.
@@ -25,7 +26,7 @@ This key financial measurement is the ratio of a borrower’s lifetime value to 
 This KPI is especially relevant for lenders seeking to enhance their CX. According to the International Monetary Fund (IMF), the average number of conditions per loan is 26.8. And this study by the IMF also found that the number of conditions on loan applications is increasing. The loan application process is hindered by a proliferation of conditions, adversely affecting a lender’s ability to provide a fast and seamless customer experience.
 
 
-##### DataSet used :
+# DataSet used :
 The dataset used in the project was downloaded from kaggle :
 https://www.kaggle.com/wordsforthewise/lending-club
 #### File Formats
@@ -35,13 +36,13 @@ https://www.kaggle.com/wordsforthewise/lending-club
 (Accepted loans from 2007 to 2018 -dataset for all accepted loans from 2007 to 2018 Q4 )
 The 2 Kaggle files which were large datasets with data from 2007 to 2018, were split into separate files by quater.
 
-##### Data cleansing steps: 
-###### Handle nulls, Nan Values across all fields 
-###### remove rows that have missing data- check on all fields being null or Nan 
-###### Ensure all calculation fields are float or numeral by removing spaces , removing symbols- '%','years' etc and converting
-###### Validate data (eg- states vs zipcode data)- fix incorrect data
-###### Check for duplicates: Use this as an opportunity to check for duplicates (based on name, email address, phone number, etc.), and do so at the start of the process. This will reduce both the amount of data you have to scrub as well as making data validation (at the end of the process) much simpler. 
-###### Standardize Formats: Review the formats being used for applicable data types (dates, phone numbers, postal codes etc) and set and apply a standard format to all. 
-###### Special Characters & Accents: Depending on the file format and encoding chosen, special characters can display weirdly once the data is exported. For example, the term “Açaí” might display as “AÃ§aÃ,”­ so make sure to do a check and clean as needed
-###### Add fields that are a combination of multiple fields for easier analysis(like flags)
-###### Remove leading and trailing spaces for all string fields
+# Data cleansing steps: 
+Handle nulls, Nan Values across all fields 
+Remove rows that have missing data- check on all fields being null or Nan 
+Ensure all calculation fields are float or numeral by removing spaces , removing symbols- '%','years' etc and converting
+Validate data (eg- states vs zipcode data)- fix incorrect data
+Check for duplicates: Use this as an opportunity to check for duplicates (based on name, email address, phone number, etc.), and do so at the start of the process. This will reduce both the amount of data you have to scrub as well as making data validation (at the end of the process) much simpler. 
+Standardize Formats: Review the formats being used for applicable data types (dates, phone numbers, postal codes etc) and set and apply a standard format to all. 
+Special Characters & Accents: Depending on the file format and encoding chosen, special characters can display weirdly once the data is exported. For example, the term “Açaí” might display as “AÃ§aÃ,”­ so make sure to do a check and clean as needed
+Add fields that are a combination of multiple fields for easier analysis(like flags)
+Remove leading and trailing spaces for all string fields
